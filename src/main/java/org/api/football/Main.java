@@ -5,9 +5,11 @@ import com.google.gson.Gson;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URLEncoder;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class Main {
@@ -21,6 +23,7 @@ public class Main {
         getTotalGoals(teamName, year);
     }
     public static void getTotalGoals(String teamName, int year) throws URISyntaxException, IOException, InterruptedException {
+        teamName = URLEncoder.encode(teamName, StandardCharsets.UTF_8);
         int currentHomePage = 1;
         int currentAwayPage = 1;
         Gson gson = new Gson();

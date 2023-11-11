@@ -1,4 +1,4 @@
-package org.example;
+package org.api.assemblyAI;
 
 import com.google.gson.Gson;
 
@@ -8,7 +8,6 @@ import java.net.URISyntaxException;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.sql.SQLOutput;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
